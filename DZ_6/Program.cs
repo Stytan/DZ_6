@@ -1,15 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Collections;
 
 namespace DZ_6
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
+            IntList il = new IntList();
+            Console.WriteLine("il.Length = {0}", il.Length);
+            for (int i = 0; i < 15; ++i)
+                il.Add(i * 3);
+            foreach (int i in il)
+                Console.Write("{0}\t", i);
+            Console.WriteLine("\nil.Length = {0}", il.Length);
+
+            Console.WriteLine("Hello, Dcoder!");
         }
     }
 }
