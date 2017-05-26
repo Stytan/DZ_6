@@ -100,7 +100,6 @@ namespace DZ_6
             Array.Copy(contents, tmp, Count);
             return new IntListEnum(tmp);
         }
-
         public bool IsSynchronized
         { get { return false; } }
     }
